@@ -8,7 +8,7 @@ A drone website landing page using React and Three.js
 ## Tech Stack
 
 - Language: Javascript, HTML, CSS
-- Framework: React, Three Js
+- Library: React, Three Js, GSAP
 
 ## Installation
 
