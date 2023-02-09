@@ -9,7 +9,7 @@ let camera, scene, renderer;
 let model;
 let propeller1, propeller2, propeller3, propeller4;
 let PROPELLER_SPEED = 4000;
-let DRONE_SPEED = 1000 * 10;
+let DRONE_SPEED = 10000;
 
 const loader = new GLTFLoader();
 
@@ -74,7 +74,7 @@ export function init() {
     gsap.to(model.position, {
       duration: 1,
       delay: 1,
-      x: 0,
+      x: 0.1,
       y: 0.1,
     });
 
@@ -91,6 +91,15 @@ export function init() {
 
   function animation(time) {
     controls.update();
+
+    const droneHover = document.getElementById('middle-sidebar');
+    droneHover.addEventListener('mouseover', (m) => {
+      PROPELLER_SPEED = 20;
+    });
+
+    droneHover.addEventListener('mouseout', (m) => {
+      PROPELLER_SPEED = 10000;
+    });
     if (model != undefined) {
       model.rotation.y = time / DRONE_SPEED;
     }
@@ -108,19 +117,6 @@ export function init() {
   }
 
   animation();
-
-  const droneHover = document.getElementById('middle-sidebar');
-  droneHover.addEventListener('mouseover', (m) => {
-    PROPELLER_SPEED = 100;
-  });
-
-  droneHover.addEventListener('mouseout', (m) => {
-    // let k = 50;
-    // PROPELLER_SPEED = 10;
-    // for (k; k == 0; k++) {
-    //   PROPELLER_SPEED += 5;
-    // }
-  });
 
   function rotationOfPropeller(time) {
     propeller1.rotation.y = time / -PROPELLER_SPEED;
