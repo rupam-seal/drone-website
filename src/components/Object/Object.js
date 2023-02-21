@@ -7,11 +7,16 @@ import gsap from 'gsap';
 let camera, scene, renderer;
 
 let model;
-let propeller1, propeller2, propeller3, propeller4;
+let propeller1, propeller2, propeller3, propeller4, plane;
 let PROPELLER_SPEED = 4000;
 let DRONE_SPEED = 10000;
 
 const loader = new GLTFLoader();
+
+let color1 = document?.getElementById('color-1');
+let color2 = document.getElementById('color-2');
+let color3 = document.getElementById('color-3');
+let color4 = document.getElementById('color-4');
 
 export function init() {
   camera = new THREE.PerspectiveCamera(
@@ -39,6 +44,32 @@ export function init() {
     propeller2 = model.getObjectByName('Circle001');
     propeller3 = model.getObjectByName('Circle003');
     propeller4 = model.getObjectByName('Circle004');
+    plane = model.getObjectByName('Plane');
+
+    console.log(model);
+
+    console.log(plane.material.color.r);
+
+    color1.addEventListener('click', () => {
+      console.log('color1 clicked');
+      plane.material.color.r = 255;
+      plane.material.color.g = 1;
+      plane.material.color.b = 255;
+    });
+
+    color3.addEventListener('click', () => {
+      console.log('color1 clicked');
+      plane.material.color.r = 1;
+      plane.material.color.g = 255;
+      plane.material.color.b = 1;
+    });
+
+    color4.addEventListener('click', () => {
+      console.log('color1 clicked');
+      plane.material.color.r = 1;
+      plane.material.color.g = 1;
+      plane.material.color.b = 255;
+    });
 
     gsap.to(camera.position, {
       z: 1,
@@ -94,7 +125,7 @@ export function init() {
 
     const droneHover = document.getElementById('middle-sidebar');
     droneHover.addEventListener('mouseover', (m) => {
-      PROPELLER_SPEED = 20;
+      PROPELLER_SPEED = 2;
     });
 
     droneHover.addEventListener('mouseout', (m) => {

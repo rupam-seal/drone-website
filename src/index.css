@@ -20,7 +20,7 @@ canvas {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1200px;
   min-width: 400px;
   height: 100vh;
   padding: 10px 60px;
@@ -45,6 +45,7 @@ canvas {
   align-items: center;
   line-height: 80px;
   margin-right: 100px;
+  cursor: pointer;
 }
 
 .nav-right {
@@ -59,6 +60,7 @@ canvas {
   line-height: 80px;
   padding: 10px;
   right: 0;
+  cursor: pointer;
 }
 
 .watch {
@@ -98,6 +100,21 @@ canvas {
 
 .right-sidebar li:not(:first-child) {
   padding: 6px 0;
+  font-size: 16px;
+  font-family: helvetica;
+}
+
+.right-sidebar ul li {
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 1.6;
+}
+
+.right-sidebar ul li:hover {
+  color: #000000;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 .left-bottom {
@@ -171,4 +188,60 @@ canvas {
 
 .media ul li:not(:last-child) {
   padding-right: 40px;
+}
+
+.media ul li i {
+  color: #FFFFFF;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+
+.media ul li i:hover {
+  color: #000000;
+}
+
+.color {
+  display: flex;
+}
+
+.color_item {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.color_value {
+  width: 80%;
+  height: 80%;
+  border-radius: 100%;
+  transition: all 0.1s;
+}
+
+.color_value:hover {
+  width: 87%;
+  height: 87%;
+}
+
+.color-1 {
+  background-color: rgb(255, 92, 92);
+}
+
+.color-2 {
+  background-color: rgb(255, 255, 123);
+}
+
+.color-3 {
+  background-color: rgb(81, 232, 81);
+}
+
+.color-4 {
+  background-color: rgb(144, 53, 235);
 }
