@@ -1,22 +1,33 @@
-# Drone Website
-A drone website landing page using React and Three.js
+# Drone Website ✈️
 
-## Live Site
+<p>
+A drone website landing page using React and Three.js
+</p>
+
+<br>
+
+## 🚨 Live Site
 
 - https://threedrone.netlify.app/
 
-## Tech Stack
+<br>
+
+## 🦾 Tools used
 
 - Language: Javascript, HTML, CSS
 - Library: React, Three Js, GSAP
 
-## Installation
+<br>
+
+## ⚗️ Installation
 
 Clone the project
 
 ```bash
-  https://github.com/rupam-seal/drone-website.git
+  git clone https://github.com/rupam-seal/drone-website.git
 ```
+
+<br>
 
 Go to the project directory
 
@@ -25,12 +36,25 @@ Go to the project directory
 
 ```
 
+<br>
+
+Install Dependencies
+
+```bash
+  npm install
+
+```
+
+<br>
+
 Run server
 
 ```bash
   npm start
 ```
 
-## Support
+<br>
+
+## 💁‍♂️Support💁‍♀️
 
 For support, email rupam.seal.00.00@gmail.com
