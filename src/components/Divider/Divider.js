@@ -1,7 +1,8 @@
 import React from 'react';
+import './Divider.css';
 
 const Divider = () => {
-  return <div className="middle-sidebar" id="middle-sidebar"></div>;
+  return <div className="divider" id="divider"></div>;
 };
 
 export default Divider;

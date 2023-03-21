@@ -1,20 +1,21 @@
 import React from 'react';
 import Color from './Color';
+import { Desc } from './Desc';
+import { Price } from './Price';
+import { Header } from './Header';
+import './Info.css';
 
 export const Info = () => {
   return (
-    <div className="left-sidebar">
-      <h1 className="product-title">Blender Drone</h1>
-
-      <p className="desc">
+    <div className="left__sidebar">
+      <Header>Blender Drone</Header>
+      <Desc>
         The Drone is made with free open source software blender 3.4. You can
         customize the drone with using below button and change the color of the
         drone to different variation
-      </p>
-
+      </Desc>
       <Color />
-
-      <p id="price">Price : USD $001</p>
+      <Price>125</Price>
 
       <button className="btn">BUY NOW</button>
     </div>

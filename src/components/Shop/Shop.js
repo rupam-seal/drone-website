@@ -1,14 +1,15 @@
 import React from 'react';
+import './Shop.css';
 
 export const Shop = () => {
   return (
-    <div className="right-sidebar">
+    <div className="right__sidebar">
+      <p className="title">Shop</p>
       <ul>
-        <li className="title">Shop</li>
         <li>Drones</li>
-        <li>Cameras</li>
-        <li>Lenses</li>
-        <li>Accessories</li>
+        <li>Sci-Fi</li>
+        <li>Toys</li>
+        <li>Characters</li>
         <li>View all</li>
       </ul>
     </div>

@@ -1,0 +1,33 @@
+.right__sidebar {
+  text-align: right;
+}
+
+.right__sidebar ul {
+  list-style: none;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 700;
+} 
+
+.right__sidebar ul li {
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.5s;
+  padding: 8px 0;
+  font-size: 16px;
+}
+
+.right__sidebar ul li:hover {
+  color: #000000;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@media (max-width: 620px) {
+  .right__sidebar {
+    display: none;
+  }
+}
