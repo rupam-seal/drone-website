@@ -12,6 +12,10 @@ A drone website landing page using React and Three.js
 
 <br>
 
+## 🕹️ Demo
+<img src="https://user-images.githubusercontent.com/72932336/228006786-6baf0e30-6c59-4c65-a34f-02e460fa0a33.png" width="700"/>
+<br>
+
 ## 🦾 Tools used
 
 - Language: Javascript, HTML, CSS
